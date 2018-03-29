@@ -1,4 +1,3 @@
-
 package searchExamples;
 
 import java.util.Arrays;
@@ -17,7 +16,7 @@ public class IterativeSearch {
 	}
 	
 	public static void main (String [] args) {
-		int goal = 19;
+		int goal = 15;
 		int result = iterativeSearch(data, goal);
 		if (result < 0) System.out.println("The search could not find: " + goal);
 		else System.out.println("The goal of " + goal + " was found at index: " + result);
