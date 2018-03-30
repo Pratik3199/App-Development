@@ -1,0 +1,48 @@
+package ArrayList_Sorting;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+
+public class stringSort {
+	static ArrayList<String> stringArray = new ArrayList<String>();
+	
+	public static void main(String[] args) {
+		int count = 0;
+		String values = "";
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter the number of numbers in the list");
+		count = (keyboard.nextInt());
+		
+		System.out.println("");
+		
+		System.out.println("Enter the number of numbers in the list");	
+		for(int ndx = 0; ndx < count ; ndx++) {
+			
+			values = keyboard.nextLine();
+			
+			stringArray.add(values);
+			
+		}
+		
+		// Sorting array in ascending order.
+		Collections.sort(stringArray);
+		
+		System.out.println("List in ascending sort order is:");
+		System.out.println(stringArray);
+		
+		System.out.println("");
+		
+		// Sorting array in descending order.
+		Collections.sort(stringArray, Collections.reverseOrder());
+			
+		System.out.println("List in descending sort order is:");
+		System.out.println(stringArray);
+			
+	keyboard.close();
+		
+	}
+
+}
