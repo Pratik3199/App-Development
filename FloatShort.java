@@ -3,14 +3,6 @@ package ArrayList_Sorting;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
-/******************
- * This program demostarte the sorting of Array List using the collections.sort() method
- * User enters the list and then it is displays the ascending and in descending order also.   
- * 
- * @author Sumit Singh
- *
- */
 public class floatSort {
 	static ArrayList<Float> floatArray= new ArrayList<Float>();
 	
