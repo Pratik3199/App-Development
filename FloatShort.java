@@ -36,7 +36,7 @@ public class floatSort {
 			
 		System.out.println("List in descending sort order is:");
 		System.out.println(floatArray);
-	
+
 	keyboard.close();
 		
 	}
