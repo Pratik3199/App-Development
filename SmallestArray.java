@@ -3,26 +3,31 @@
  */
 
 package recursivepuzzle;
-public class Smallestelement{
-     static int arr[] = {10, 24, 45, 90, -8};
-      
-     static int smallest()
-     {
-         int i;
-          
-         int min = arr[0];
-       
-         for (i = 1; i < arr.length; i++)
-             if (arr[i] < min)
-                 min = arr[i];
-       
-         return min;
-     }
-      
- 
-     public static void main(String[] args) 
-     {
-         System.out.println("Smallest array is " + smallest());
-        }
- }
+
+public class Smallestelement {
+
+
+	static int min;
+	
+	public static void main(String[] args) {
+		int container[] = {0,6,6,3,1,5,-8,-9,-2,6,};	
+		
+		
+		System.out.println("Smallest are: = " + small(container, container.length));
+		
+	}
+
+	private static int small(int numbers[], int size) {
+			
+			if(size-1<=0) return min;
+			
+			if (numbers[size-1] < min)   
+				min = numbers[size-1];   
+		
+		return small(numbers, --size);
+		
+				
+	}
+}
+
 //This code is computed by PRATIK SINGH
