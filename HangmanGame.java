@@ -1,3 +1,5 @@
+
+
 package w4d2StudyHall;
 import java.util.Scanner;
 import java.util.Random;
@@ -66,6 +68,7 @@ public class HangmanGame{
 				aCharacter = theWord.charAt(2);
 				theResult = theResult.replace(aCharacter, '?');
 				System.out.println("the display version of the word is: "+theResult);
+				//Pratik Singh
 		System.out.println("Guess the character");
 		theAnswer = keyboard.next();
 		if (theAnswer.equals("S")) {
@@ -364,3 +367,4 @@ public class HangmanGame{
 	}
 	
 }}
+//This code is implemented by Pratik Singh
